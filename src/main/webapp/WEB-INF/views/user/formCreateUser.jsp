@@ -11,15 +11,19 @@
     <form:form modelAttribute="userCreateDTO" action="/user/account/submit" method="post">
         <form:label path="username">Username:</form:label>
         <form:input path="username" required="true" id="username"/>
+        <form:errors path="username"/>
 
         <form:label path="password">Password:</form:label>
         <form:password path="password" required="true" id="password"/>
+        <form:errors path="password"/>
 
         <form:label path="email">Email:</form:label>
         <form:input path="email" required="true" id="email"/>
+        <form:errors path="email"/>
 
         <form:label path="phone">Telefone:</form:label>
         <form:input path="phone" required="true" id="phone"/>
+        <form:errors path="phone"/>
 
         <button type="submit">cadastrar</button>
     </form:form>
