@@ -9,11 +9,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 @SpringBootApplication
 public class GameLibraryApplication {
 
-    @GetMapping("/dashboard")
-    public String oi() {
-        return "dashboard";
-    }
-
     public static void main(String[] args) {
         SpringApplication.run(GameLibraryApplication.class, args);
     }
