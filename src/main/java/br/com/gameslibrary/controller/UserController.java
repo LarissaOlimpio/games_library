@@ -33,7 +33,11 @@ public class UserController {
 
         User user = userCreateDTO.toModel(userCreateDTO);
         userRepository.save(user);
-        return "redirect:/user/account";
+        return "dashboard/home";
+    }
+    @GetMapping("/home")
+    public String showHomePage(Model model) {
+        return "dashboard/home";
     }
 
 }
