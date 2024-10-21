@@ -30,6 +30,7 @@ public class UserController {
             model.addAttribute("userCreateDTO", userCreateDTO);
             return showFormRegisterUser(userCreateDTO);
         }
+
         User user = userCreateDTO.toModel(userCreateDTO);
         userRepository.save(user);
         return "redirect:/user/account";

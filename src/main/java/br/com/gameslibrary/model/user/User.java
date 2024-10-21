@@ -32,5 +32,7 @@ public class User {
         this.phone = userCreateDTO.getPhone();
     }
 
-
+    public @NotBlank String getUsername() {
+        return username;
+    }
 }
